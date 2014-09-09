@@ -1,14 +1,22 @@
 (function () {
   "use strict";
 
-  angular.module('app', ['ngRoute'])
-    .config(['$routeProvider', '$locationProvider',  function ($routeProvider, $locationProvider) {
-      $routeProvider
-        .when('/', {
-          templateUrl:'partials/home.html'
-        })
-        .otherwise('/');
-      //$locationProvider.html5Mode(true);
-    }]);
+  angular.module('app', ['ui.router'])
+    .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
+
+       $stateProvider
+         .state('home', {
+           url: '/home',
+           templateUrl:'partials/home.html',
+           controller:'MainCtrl'
+         })
+         .state('posts', {
+           url:'/posts/{id}',
+           templateUrl:'partials/posts.html',
+           controller:'PostsCtrl'
+         });
+
+        $urlRouterProvider.otherwise('home');
+      }]);
 })();
 

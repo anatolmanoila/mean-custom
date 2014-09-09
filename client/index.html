@@ -8,16 +8,17 @@
 </head>
 <body>
 <div ng-app="app">
-  <div class="container-fluid" ng-view=""></div>
+  <div class="container-fluid" ui-view=""></div>
 </div>
 
 
 <script src="vendor/jquery/dist/jquery.min.js"></script>
 <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="vendor/angular/angular.js"></script>
-<script src="vendor/angular-route/angular-route.min.js"></script>
-<!--ng-app-->
+<script src="vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
+<!--my app-->
 <script src="app.js"></script>
 <script src="controllers/MainCtrl.js"></script>
+<script src="services/postsService.js"></script>
 </body>
 </html>
