@@ -1,0 +1,14 @@
+{
+  "name": "mean-blog-voting-system",
+  "version": "0.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository":{
+    "git":"https://github.com/anatolmanoila/mean-custom.git"
+  },
+  "author": "aema",
+  "license": "ISC"
+}
