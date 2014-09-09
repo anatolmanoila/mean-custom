@@ -1,16 +1,25 @@
-<html ng-app>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Starter - MEAN App</title>
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="stylesheets/main.css"/>
 </head>
 <body>
+<div ng-app="app">
+  <!--<div ng-view=""></div>-->
+  <div class="container-fluid">
+    {{ 34 + 53}}
+  </div>
 
-{{4+ 4}}
+</div>
+
 
 <script src="vendor/jquery/dist/jquery.min.js"></script>
 <script src="vendor/angular/angular.js"></script>
 <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="scripts/app.js"></script>
-<script src="scripts/controllers/MainCtrl.js"></script>
+<script src="app.js"></script>
+<script src="controllers/MainCtrl.js"></script>
 </body>
 </html>
