@@ -2,16 +2,18 @@
   "use strict";
 
   angular.module('app')
-    .controller('MainCtrl', ['$scope','postsService', function ($scope, postsService) {
-      $scope.posts = postsService.factory;
+    .controller('MainCtrl', ['$scope', 'postsService', function ($scope, postsService) {
+      $scope.posts = postsService.posts;
 
       $scope.addPost = function () {
-        if($scope.title === '') {return;}
+        if ($scope.title === '') {
+          return;
+        }
         $scope.posts.push({
-            title:$scope.title,
-            link:$scope.link,
-            upvotes:0
-          });
+          title: $scope.title,
+          link: $scope.link,
+          upvotes: 0
+        });
         $scope.title = '';
         $scope.link = '';
       };
