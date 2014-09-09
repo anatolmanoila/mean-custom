@@ -1,0 +1,7 @@
+<section class="row" ng-controller="MainCtrl">
+  <ul>
+    <li ng-repeat="p in posts | orderBy: '-upvotes'">
+      {{p.title}} - upvotes: <strong>{{p.upvotes}}</strong>
+    </li>
+  </ul>
+</section>

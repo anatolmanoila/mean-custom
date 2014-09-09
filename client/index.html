@@ -8,17 +8,15 @@
 </head>
 <body>
 <div ng-app="app">
-  <!--<div ng-view=""></div>-->
-  <div class="container-fluid">
-    {{ 34 + 53}}
-  </div>
-
+  <div class="container-fluid" ng-view=""></div>
 </div>
 
 
 <script src="vendor/jquery/dist/jquery.min.js"></script>
-<script src="vendor/angular/angular.js"></script>
 <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="vendor/angular/angular.js"></script>
+<script src="vendor/angular-route/angular-route.min.js"></script>
+<!--ng-app-->
 <script src="app.js"></script>
 <script src="controllers/MainCtrl.js"></script>
 </body>
